@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.RewardedActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blur" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/topLayout"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rock_salt"
+            android:text="TeenMeet"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wallet"
+            android:textColor="#CEFF9800"
+            android:textSize="22sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="50sp"
+        android:id="@+id/youCoins"
+        android:textColor="@color/white"
+        android:layout_below="@id/topLayout"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/subText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="coins_you_have"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@+id/youCoins"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you_have_to_watch_ads_to_earn_coins"
+        android:layout_below="@id/subText2"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:id="@+id/subText3"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/ad1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subText3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/reward_bg"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/coinsImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/coinsImage"
+            android:text="100 coins"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/video_1_icons"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/reward_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad1">
+        <ImageView
+            android:id="@+id/coinsImage2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/coinsImage2"
+            android:text="100 coins"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:id="@+id/video_2"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/reward_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ad3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad2">
+        <ImageView
+            android:id="@+id/coinsImage3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/coinsImage3"
+            android:text="100 coins"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:id="@+id/video_3"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/reward_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ad4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad3">
+        <ImageView
+            android:id="@+id/coinsImage4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/coinsImage4"
+            android:text="100 coins"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/video_4"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/reward_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ad5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad4">
+        <ImageView
+            android:id="@+id/coinsImage5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/coinsImage5"
+            android:text="100 coins"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/video_5"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/reward_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ad6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad5">
+        <ImageView
+            android:id="@+id/coinsImage6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_coin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/coinsImage6"
+            android:text="100 coins"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:id="@+id/video_6"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/youtube" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

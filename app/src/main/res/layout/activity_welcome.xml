@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.welcome">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg_simple" />
+
+    <TextView
+        android:id="@+id/app_name_welcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:layout_marginTop="400sp"
+        android:fontFamily="@font/rock_salt"
+        android:text="Teenmeet"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name_welcom"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_mono_thin"
+        android:text="Random video call"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/welcome_decription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Talk with random people \n from all around the globe \n make new friend have fun"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_Getstarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_decription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

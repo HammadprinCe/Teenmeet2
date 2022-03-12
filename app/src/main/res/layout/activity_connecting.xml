@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/connecting_gradient"
+    tools:context=".activities.activities.ConnectingActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotianimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/connecting" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile"
+        android:layout_width="92dp"
+        android:layout_centerInParent="true"
+        android:layout_height="92dp"
+        android:src="@drawable/demo_user"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Connecting...."
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/profile"
+            android:textAlignment="center"
+
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

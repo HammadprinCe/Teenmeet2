@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.activities.loginActivity">
+
+    <ImageView
+        android:id="@+id/backgroundloginscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg_simple" />
+
+    <TextView
+        android:id="@+id/teenmeet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rock_salt"
+        android:text="Teenmeet"
+        android:textColor="@color/white"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/login_dec1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teenmeet_title"
+       android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:text="please login to countinue"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_dec1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/googleicon"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/google" />
+
+        <TextView
+            android:id="@+id/sigin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue with Google"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/login_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearbtn"
+      android:layout_centerInParent="true"
+        android:text="By continuing you are agreeing \nto our terms and privacy policy  "
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+</RelativeLayout>

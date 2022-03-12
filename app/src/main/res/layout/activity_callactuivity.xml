@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    tools:context=".activities.activities.Callactuivity">
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="35dp"
+        >
+        <ImageView
+            android:id="@+id/micbtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/btn_unmute_normal"
+
+            />
+
+        <ImageView
+            android:id="@+id/btnend"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/btn_endcall_normal" />
+
+        <ImageView
+            android:id="@+id/videobtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/btn_video_normal" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/user"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/demo_user">
+
+        </com.mikhaellopez.circularimageview.CircularImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Mai hammad"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/profilecity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Gilgit,Pakistan"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--<LinearLayout-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--   android:id="@+id/looding_cntrols"-->
+<!--    >-->
+<!--    <ImageView-->
+<!--        android:id="@+id/imag_bluer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:srcCompat="@drawable/bg_blur" />-->
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/looding"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:lottie_rawRes="@raw/looding"-->
+<!--        />-->
+
+<!--</LinearLayout>-->
+
+</RelativeLayout>
